@@ -1,0 +1,261 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        #subscribe h3 {
+            color: #7A37D5;
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #subscribe {
+            margin-bottom: 50px;
+        }
+
+        input {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 14px 70px;
+            color: #000000;
+            margin-bottom: 15px;
+            background: transparent;
+            border: 1px solid gray;
+        }
+
+        input[type=submit]:hover {
+            background: #7A37D5;
+            color: #fff;
+            transition: 300ms ease-in-out;
+        }
+
+        #follow h4 {
+            font-size: 18px;
+            color: #7A37D5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #follow i {
+            height: 30px;
+            width: 30px;
+            color: white;
+            background: black;
+            /* line-height: 30px; */
+            border-radius: 50%;
+            padding: 8px 8px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #follow .icons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        hr {
+            margin: 50px 0;
+        }
+
+        #sprint .wehelp {
+            padding: 10px 50px;
+        }
+
+        #sprint .wehelp img {
+            height: 35%;
+            margin-bottom: 30px;
+        }
+
+        #sprint button {
+            border: none;
+            padding: 10px 80px;
+            text-align: center;
+            color: #fff;
+            background: #7A37D5;
+            margin-bottom: 30px;
+        }
+
+        #sprint h4 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #7A37D5;
+        }
+
+        #sprint .wehelp p {
+            text-transform: capitalize;
+        }
+
+        #how button {
+            color: #fff;
+            background: #7A37D5;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        #how p#weare {
+            text-transform: capitalize;
+            margin-bottom: 80px;
+        }
+
+        #how .contain {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-bottom: 70px;
+            padding: 30px;
+            text-align: center;
+            height: 300px;
+        }
+
+        #how .contain img {
+            margin-top: -80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40%;
+            z-index: 1;
+            margin-bottom: 20px;
+        }
+
+        #how .contain p {
+            text-transform: capitalize;
+        }
+
+        #why {
+            background-image: url('../img/vectorback.png');
+            background-size: cover;
+            background-position: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            padding-left: 250px;
+            padding-right: 250px;
+            margin-bottom: 40px;
+            height: 300px;
+        }
+
+        #why img {
+            display: inline-block;
+            height: 80px;
+        }
+
+        #why p#comment {
+            display: inline-block;
+            margin-left: 30%;
+            margin-right: 20px;
+        }
+
+        #what {
+            margin-bottom: 100px;
+        }
+
+        #what h3 {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        #what p {
+            margin-bottom: 50px;
+        }
+
+        #header {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url("../img/leachback.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+
+        #header a.navbar-brand {
+            background: transparent;
+        }
+
+        #header a.apply {
+            background: #7A37D5;
+            border-radius: 5px;
+            padding: 10px 50px;
+            color: beige;
+            line-height: 20px;
+            text-align: center;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        #header h3 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 130px;
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #header p {
+            margin-bottom: 50px;
+            font-size: 22px;
+        }
+
+        #header li a {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        #header img.man {
+            margin-top: 70px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #what iframe{
+            width:480px;
+            height:320px;
+        }
+        @media screen and (max-width: 768px) {
+            #why {
+                padding: 100px 0 10px 10px;
+                height: 400px;
+            }
+
+            #what iframe{
+                width: 360px;
+                height: 300px;
+            }
+
+            #header h3 {
+                font-size: 24px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #header p{
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+            #header a.apply {
+                padding: 10px 50px;
+                color: beige;
+                line-height: 10px;
+                font-size: 18px;
+            }
+            #header img.man {
+                margin: 20px 0;
+                height: 80%;
+            }
+    
+        }
+
+        @media screen and (max-width: 990px) {
+            #why {
+                padding: 100px 0 10px 10px;
+                height: 400px;
+            }
+        }
