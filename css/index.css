@@ -208,8 +208,13 @@ button.submit {
 }
 
 #header li a {
-  color: rgba(0, 0, 0, 0.6);
+  /* color: rgba(0, 0, 0, 0.6); */
   font-weight: 500;
+  transition: all 500ms ease-in-out;
+}
+
+#header li a:hover{
+  transform: scale(1.05);
 }
 
 #header li a.signup {
