@@ -11,11 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
+    <img class="dots" src="img/dots.png" alt="">
+    <img class="dot" src="img/dot.png" alt="">
+    <img class="mask" src="img/mask.png" alt="">
 
     <div id="header" class="header">
         <div class="container">
@@ -40,25 +44,15 @@
                             <a class="nav-link mr-5" href="leachabout.html" tabindex="-1" aria-disabled="true">About Us</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item active mb-2">
-                            <a class="nav-link login" href="leachabout.html"><i class="fa fa-lock"
-                                    aria-hidden="true"></i> Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link signup" href="#" tabindex="-1" aria-disabled="true">Sign up</a>
-                        </li>
-                    </ul>
                 </div>
             </nav>
 
             <div class="row">
                 <div class="col-md-6">
                     <h3>build exceptional digital brand, customer & <br> product experiences</h3>
-                    <p>Leach is a product design company maximising the design sprint strategies to raise design
-                        thinkers that wil help build market fit tech startups.</p>
-                    <a href="#" class="apply mr-3">Apply</a>
-                    <a href="#" class="message"><i class="fa fa-play mr-2" aria-hidden="true"></i>CEO's Message</a>
+                    <p>A UX company maximising the design production and management strategies to build market fit products.</p>
+                    <a href="#" class="apply mr-3">Submit Project</a>
+                    <a href="#" class="message">Join Team</a>
                 </div>
                 <div class="col-md-6">
                     <img src="img/3099.png" alt="" class='img-fluid man'>
@@ -281,29 +275,32 @@
         </div>
     </div>
 
-    <div id="partners" class="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-4">
-                    <h3>Partners</h3>
-                </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-6 quote">
+    <div id="partnersDiv">
+        <h3 id="partners">Partners</h3>
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>   
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <img id="quote" src="img/quote.png">
                     <h4>Bux Office is changing the way startups are built in Africa. With them around, there’s a future
                         we can bank on</h4>
-                    <img src="img/man.png" alt="" class='img-fluid'>
-                    <p>Victor Asemota</p>
+                    <div class="carousel-caption">
+                        <img class="man" src="img/man.png">
+                        <p>Victor Asemota</p>
+                    </div>   
                 </div>
-
-                <div class="col-md-3"></div>
             </div>
+            <a class="carousel-control left" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+            <a class="carousel-control right" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
         </div>
     </div>
 
     <div id="footer" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mt-5" <p>Follow Us on Our Social Networks</p>
+                <div class="col-lg-6 col-md-12 mb-4 mt-5"><p>Follow Us on Our Social Networks</p>
                     <div class="icons">
                         <a href="#"><i class="fa fa-twitter ml-4" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
