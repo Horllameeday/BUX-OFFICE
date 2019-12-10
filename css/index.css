@@ -5,7 +5,32 @@
 }
 
 body {
+  display: relative;
   font-family: "Poppins", sans-serif;
+}
+
+.dots {
+  position: absolute;
+  left: 0px;
+  top: 530px;
+  z-index: -10;
+  width: 150px;
+  transform: rotate(180deg);
+}
+
+.dot {
+  position: absolute;
+  right: 0px;
+  top: 550px;
+  height: 600px;
+  z-index: -10;
+}
+
+.mask {
+  position: absolute;
+  left: 0px;
+  top: 1200px;
+  z-index: -10;
 }
 
 #footer a,
@@ -96,36 +121,61 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
+#partnersDiv {
+  margin-top: 90px;
+}
+
 #partners {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: "Arvo", sans-serif;
+}
+
+#myCarousel {
+  margin-top: 0;
   padding: 20px;
-  margin: 40px 0;
+  padding-bottom: 30px;
   text-align: center;
+  background-color: transparent;
 }
 
-#partners h3 {
-  font-family: Arvo;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.8);
+#myCarousel .item {
+  height:380px;
 }
 
-#partners h4 {
+#slide1 { 
+}
+
+.carousel-caption {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+#myCarousel h4 {
   font-weight: bold;
+  width: 70%;
+  margin: auto;
   font-size: 30px;
+  padding: 15px;
   text-align: center;
   letter-spacing: 0.05em;
   color: #5622a8;
 }
 
-#partners img {
-  margin: 30px 0 10px 0;
+#myCarousel p {
+  color: #000000;
 }
 
-#partners .quote {
-  background: url("../img/quote.png") no-repeat;
+#quote {
+  position: absolute;
+  left: 150px;
+  top: 0px;
+}
+
+.man {
+    margin-bottom: 10px;
 }
 
 #mentalize p {
@@ -308,6 +358,56 @@ button.submit {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+   #why {
+    padding: 100px 0 10px 10px;
+    height: 400px;
+  }
+
+  #header h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #header p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  #header a.apply,
+  #header a.message {
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: auto;
+  }
+
+  .dot {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .dots, .dot {
+    top: 500px;
+  }
+
+  #partners {
+      font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .dots, .dot {
+    top: 680px;
+  }
+  .mask {
+    top: 1500px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #why {
     padding: 100px 0 10px 10px;
@@ -347,31 +447,53 @@ button.submit {
     margin-bottom: 10px;
     padding: auto;
   }
+
+  .dots, .dot, .mask{
+    display: none;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  #partners {
+      font-size: 45px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-  #why {
-    padding: 100px 0 10px 10px;
-    height: 400px;
-  }
+@media screen and (max-width: 805px) {
+    #myCarousel h4 {
+      font-size: 24px;
+    }
 
-  #header h3 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  #header p {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  #header a.apply,
-  #header a.message {
-    font-size: 16px;
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 10px;
-    padding: auto;
-  }
+    #myCarousel .item {
+      height: 380px;
+    }
 }
+
+@media screen and (max-width: 515px) {
+    #partners {
+      font-size: 30px;
+    }
+
+    #myCarousel .item {
+      height: 330px;
+    }
+
+    #myCarousel h4, #myCarousel p {
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #myCarousel .item {
+      height: 350px;
+    }
+
+    #partnersDiv {
+        margin-top: 40px;
+    }
+}
+
+
+
