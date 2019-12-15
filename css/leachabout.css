@@ -47,10 +47,19 @@ body {
   float: right;
 }
 
-#header li a {
+/* #header li a {
   font-family: "Poppins";
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
+} */
+
+#header li a {
+  font-weight: 500;
+  transition: all 500ms ease-in-out;
+}
+
+#header li a:hover {
+  transform: scale(1.05);
 }
 
 #header li a.signup {
@@ -62,12 +71,22 @@ body {
   display: inline-block;
 }
 
-#header li a.login {
-  color: #2b88f7;
-  margin-right: 25px;
-  font-size: 18px;
+#header li a.active{
+  position: relative;
 }
 
+#header li a.active:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom:0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: gray;
+  color: red;
+}
 #header img.nav {
   height: 60px;
 }
@@ -228,4 +247,11 @@ span.colored {
   #testimonials #second {
     margin-top: 20px;
   }
+}
+
+
+@media screen and (max-width:990px){
+  #header li a.active:after{
+      content:none;
+}
 }

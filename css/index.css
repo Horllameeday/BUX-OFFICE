@@ -5,32 +5,7 @@
 }
 
 body {
-  display: relative;
   font-family: "Poppins", sans-serif;
-}
-
-.dots {
-  position: absolute;
-  left: 0px;
-  top: 530px;
-  z-index: -10;
-  width: 150px;
-  transform: rotate(180deg);
-}
-
-.dot {
-  position: absolute;
-  right: 0px;
-  top: 550px;
-  height: 600px;
-  z-index: -10;
-}
-
-.mask {
-  position: absolute;
-  left: 0px;
-  top: 1200px;
-  z-index: -10;
 }
 
 #footer a,
@@ -51,14 +26,14 @@ body {
   margin-bottom: 50px;
 }
 
-#mentalize {
+#join-team {
   padding: 40px;
   margin-top: 10px;
   margin-bottom: 50px;
   background: rgba(228, 222, 222, 0.3);
 }
 
-#mentalize h3 {
+#join-team h3 {
   font-family: Arvo;
   font-weight: bold;
   font-size: 32px;
@@ -121,71 +96,50 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-#partnersDiv {
-  margin-top: 90px;
+#works h5{
+  color: #2b88f7;
 }
 
 #partners {
-  text-align: center;
-  font-size: 64px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  font-family: "Arvo", sans-serif;
-}
-
-#myCarousel {
-  margin-top: 0;
   padding: 20px;
-  padding-bottom: 30px;
+  margin: 40px 0;
   text-align: center;
-  background-color: transparent;
 }
 
-#myCarousel .item {
-  height:380px;
-}
-
-#slide1 { 
-}
-
-.carousel-caption {
-  font-size: 18px;
-  margin-top: 0;
-}
-
-#myCarousel h4 {
+#partners h3 {
+  font-family: Arvo;
+  font-style: normal;
   font-weight: bold;
-  width: 70%;
-  margin: auto;
+  font-size: 34px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#partners h4 {
+  font-weight: bold;
   font-size: 30px;
-  padding: 15px;
   text-align: center;
   letter-spacing: 0.05em;
   color: #5622a8;
 }
 
-#myCarousel p {
-  color: #000000;
+#partners img {
+  margin: 30px 0 10px 0;
 }
 
-#quote {
-  position: absolute;
-  left: 150px;
-  top: 0px;
+#partners .quote {
+  background: url("../img/quote.png") no-repeat;
 }
 
-.man {
-    margin-bottom: 10px;
-}
-
-#mentalize p {
+#join-team p {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 45px;
   color: rgba(0, 0, 0, 0.8);
 }
-#mentalize li {
+#join-team li {
   margin-bottom: 15px;
 }
 .monetize h4 {
@@ -267,19 +221,21 @@ button.submit {
   transform: scale(1.05);
 }
 
-#header li a.signup {
-  background: #7a37d5;
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: inline-block;
+#header li a.active{
+  position: relative;
 }
 
-#header li a.login {
-  color: #2b88f7;
-  margin-right: 25px;
-  font-size: 18px;
+#header li a.active:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom:0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: gray;
+  color: red;
 }
 
 #header img.nav {
@@ -358,56 +314,6 @@ button.submit {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
-   #why {
-    padding: 100px 0 10px 10px;
-    height: 400px;
-  }
-
-  #header h3 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  #header p {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  #header a.apply,
-  #header a.message {
-    font-size: 16px;
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 10px;
-    padding: auto;
-  }
-
-  .dot {
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width:1199px) {
-  .dots, .dot {
-    top: 500px;
-  }
-
-  #partners {
-      font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-  .dots, .dot {
-    top: 680px;
-  }
-  .mask {
-    top: 1500px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #why {
     padding: 100px 0 10px 10px;
@@ -447,53 +353,38 @@ button.submit {
     margin-bottom: 10px;
     padding: auto;
   }
+}
 
-  .dots, .dot, .mask{
-    display: none;
+@media screen and (max-width: 1200px) {
+  #why {
+    padding: 100px 0 10px 10px;
+    height: 400px;
   }
 
-  #quote {
-    display: none;
+  #header h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  #partners {
-      font-size: 45px;
-    }
-}
+  #header p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
 
-@media screen and (max-width: 805px) {
-    #myCarousel h4 {
-      font-size: 24px;
-    }
-
-    #myCarousel .item {
-      height: 380px;
-    }
-}
-
-@media screen and (max-width: 515px) {
-    #partners {
-      font-size: 30px;
-    }
-
-    #myCarousel .item {
-      height: 330px;
-    }
-
-    #myCarousel h4, #myCarousel p {
-      font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #myCarousel .item {
-      height: 350px;
-    }
-
-    #partnersDiv {
-        margin-top: 40px;
-    }
+  #header a.apply,
+  #header a.message {
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: auto;
+  }
 }
 
 
-
+@media screen and (max-width:990px){
+  #header li a.active:after{
+      content:none;
+}
+}
