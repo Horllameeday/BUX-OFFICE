@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #header {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 0 0 100px;
   margin-bottom: 40px;
 }
 
@@ -35,6 +35,7 @@ body {
   margin-top: 10px;
   margin-bottom: 50px;
   font-family: "Poppins", sans-serif;
+  line-height: 50px;
 }
 
 #header p {
@@ -43,8 +44,9 @@ body {
 }
 
 #header img.halfcircle {
-  height: 300px;
+  height: 350px;
   float: right;
+  margin-top: 80px;
 }
 
 /* #header li a {
@@ -125,8 +127,8 @@ span.colored {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.about div.container {
-  padding: 30px 80px;
+.about {
+  padding: 15px;
 }
 
 .about {
@@ -135,14 +137,16 @@ span.colored {
 
 .about img {
   height: 400px;
-  /* float: right; */
-  display: block;
-  margin: 0 auto;
+  float: left;
+  /* display: block;
+  margin: 0 auto; */
 }
 
 .about h3 {
   margin-top: 150px;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-family: 'Arvo', sans-serif;
 }
 
 .about p {
@@ -150,7 +154,72 @@ span.colored {
   line-height: 40px;
 }
 
-.seen {
+#team{
+  margin: 40px 0;
+}
+
+#team h3{
+  font-family: "Arvo", sans-serif;
+  margin-bottom: 20px;
+}
+
+#inquiries, #join{
+  margin-bottom: 30px;
+  padding: 20px 0 0 10px;
+}
+
+#newsletter{
+  margin-bottom: 100px;
+  padding: 20px 0 0 10px;
+}
+
+#newsletter input{
+  display: block;
+  border: none;
+  font-size: 48px;
+  padding-left: 15px;
+  color: #5622a8;
+}
+
+#newsletter input:invalid{
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+#newsletter .subscribe{
+  background: #fff;
+  border: 1px solid #7a37d5;
+  outline: none;
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(122, 55, 213, 0.2);
+  margin: 10px;
+  transition: 400ms ease-in;
+}
+
+#newsletter .subscribe:hover{
+  background: #7a37d5;
+  color: #fff;
+}
+
+#inquiries h3,
+#join h3{
+  color: #7a37d5;
+  margin-bottom: 30px;
+}
+
+#inquiries p, #join p{
+  font-size: 20px;
+}
+
+#inquiries h4, #join h4{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* .seen {
   margin-bottom: 100px;
 }
 
@@ -169,7 +238,7 @@ span.colored {
   height: 400px;
   float: right;
   margin-top: -60px;
-}
+} */
 
 #footer {
   background-color: #5622a8;
@@ -213,6 +282,9 @@ span.colored {
 @media screen and (max-width: 768px) {
   .about img {
     height: 300px;
+    display: block;
+    float: none;
+    margin: 0 auto;
   }
   .about h3 {
     margin-top: 50px;
@@ -220,10 +292,12 @@ span.colored {
   }
   #header img.halfcircle {
     transform: rotate(90deg);
-    display: block;
-    float: unset;
-    margin: 0 auto;
+    display: none;
+    float: none;
+    margin-left:auto;
+    margin-right:auto;
   }
+
   #header {
     margin-bottom: 0;
     padding: 0 30px;
@@ -247,6 +321,10 @@ span.colored {
   #testimonials #second {
     margin-top: 20px;
   }
+
+  #newsletter input{
+    font-size: 28px;
+    color: #9f65f0;
 }
 
 
