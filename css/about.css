@@ -10,8 +10,11 @@ body {
 
 #header {
   width: 100%;
-  padding: 0 0 0 100px;
   margin-bottom: 40px;
+}
+
+#header nav{
+  margin-bottom: 30px;
 }
 
 #header a.navbar-brand {
@@ -30,11 +33,11 @@ body {
 
 #header h3 {
   text-transform: capitalize;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 700;
   margin-top: 10px;
   margin-bottom: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arvo", sans-serif;
   line-height: 50px;
 }
 
@@ -49,6 +52,10 @@ body {
   margin-top: 80px;
 }
 
+#header a.navbar-brand img.nav{
+  height: 55px;
+}
+
 /* #header li a {
   font-family: "Poppins";
   color: rgba(0, 0, 0, 0.6);
@@ -58,6 +65,7 @@ body {
 #header li a {
   font-weight: 500;
   transition: all 500ms ease-in-out;
+  outline: none;
 }
 
 #header li a:hover {
@@ -121,6 +129,7 @@ span.colored {
   background: #7a37d5;
   color: #fff;
   font-weight: bold;
+  text-decoration: none;
   outline: none;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -179,6 +188,7 @@ span.colored {
   font-size: 48px;
   padding-left: 15px;
   color: #5622a8;
+  margin: 30px 0;
 }
 
 #newsletter input:invalid{
@@ -217,6 +227,14 @@ span.colored {
 #inquiries h4, #join h4{
   font-weight: bold;
   font-size: 24px;
+}
+
+#join img{
+  height: 350px;
+  float: right;
+  margin-top: -50px;
+  /* display: block;
+  margin: 0 auto; */
 }
 
 /* .seen {
@@ -293,9 +311,6 @@ span.colored {
   #header img.halfcircle {
     transform: rotate(90deg);
     display: none;
-    float: none;
-    margin-left:auto;
-    margin-right:auto;
   }
 
   #header {
@@ -325,6 +340,12 @@ span.colored {
   #newsletter input{
     font-size: 28px;
     color: #9f65f0;
+}
+
+  #join img{
+    display: none;
+  }
+
 }
 
 
