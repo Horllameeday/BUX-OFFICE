@@ -14,6 +14,10 @@ body {
   margin-bottom: 50px;
 }
 
+#header nav{
+  margin-bottom: 30px;
+}
+
 #works,
 #ready{
     padding: 30px;
@@ -24,6 +28,10 @@ body {
 }
 #header a.navbar-brand {
   background: transparent;
+}
+
+#header img.nav {
+  height: 60px;
 }
 
 #header h3 {
@@ -37,13 +45,15 @@ body {
 
 #header p {
   margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: .35rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 #header li a {
   font-weight: 500;
   transition: all 500ms ease-in-out;
+  outline: none;
 }
 
 #header li a:hover{
@@ -123,6 +133,20 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+
+#works .horizontal{
+  background: url('../img/dots.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 18%;
+}
+
+#works .nobio{
+  background: url('../img/dotsbg.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
 #ready h3 {
     margin-top: 50px;
   color: #7a37d5;
@@ -132,7 +156,8 @@ body {
   margin-bottom: 30px;
 }
 #ready p {
-  font-size: 22px;
+  font-size: 28px;
+  letter-spacing: 0.4rem;
 }
 
 #ready span a {
