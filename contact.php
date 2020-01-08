@@ -4,14 +4,14 @@ require_once 'source/db_connect.php';
 
 if(isset($_POST['contact'])) {
 
-      $fullname = 'a';#$_POST['fullname'];
-      $email = 'b';#$_POST['email'];
-      $phonenumber = 'c';#$_POST['phonenumber'];
-      $company = 'd';#$_POST['company'];
-      $country = 'e';#$_POST['country'];
-      $budget = 1000;#$_POST['budget'];
-      $interest = 'Interest'; #$_POST['interest'];
-      $requirements = 'that';#$_POST['requirements'];
+      $fullname = $_POST['fullname'];
+      $email = $_POST['email'];
+      $phonenumber = $_POST['phonenumber'];
+      $company = $_POST['company'];
+      $country = $_POST['country'];
+      $budget = $_POST['budget'];
+      $interest = $_POST['interest'];
+      $requirements = $_POST['requirements'];
       
     try {
       $SQLInsert = "INSERT INTO contacts (fullname, email, phonenumber, company,
