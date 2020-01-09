@@ -27,9 +27,14 @@ if(isset($_POST['apply'])) {
         ':speciality' => $speciality
       ));
 
-      if($statement->rowCount() == 1) {
+      if($statement->rowCount() == 1) {  
+        $message='<div class="alert alert-success">successfully added</div>';
         header('location: index.html');
-      }
+        }
+        else {
+            $message='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later or existing data (email, username)</div>';
+        }
+      #header('location: index.html');
     }
     catch (PDOException $e) {
       echo "Error: " . $e->getMessage();
