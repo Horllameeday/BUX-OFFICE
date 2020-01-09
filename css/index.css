@@ -43,8 +43,10 @@ body {
 }
 
 #services {
-  margin: 50px 0;
-  padding: 20px;
+  padding-left: 20px;
+  background: url('../img/dots.png') no-repeat top right;
+  background-size: 18%;
+  
 }
 #services img {
   display: block;
@@ -76,8 +78,16 @@ body {
 }
 
 #works {
-  padding: 20px;
-  margin: 50px 0;
+  padding-left: 20px;
+  /* margin: 50px 0; */
+  background: url('../img/dotsother.png');
+
+  background-position: bottom right;
+ 
+  background-repeat: no-repeat;
+
+  background-size: 20%;
+
 }
 #works .hero-text {
   font-family: Arvo;
@@ -249,7 +259,7 @@ button.submit {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: gray;
+  background-color: rgba(122, 55, 213, 0.2);
   color: red;
 }
 
@@ -266,7 +276,12 @@ button.submit {
 
 #industry {
   margin: 50px 0;
-  padding: 20px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+  background: url('../img/dots.png'), url('../img/dots.png');
+  background-position: left center, center right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 18%, 18%;
 }
 
 #industry p {

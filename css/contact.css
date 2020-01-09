@@ -68,7 +68,7 @@ body {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: gray;
+  background-color: rgba(122, 55, 213, 0.2);
   color: red;
 }
 
@@ -105,10 +105,11 @@ body {
   font-size: 26px;
 }
 
-.form-part h3 {
+#love h2 {
   font-family: "Arvo", sans-serif;
   font-weight: bold;
   font-size: 36px;
+  margin-top: 50px;
 }
 
 input,
@@ -158,7 +159,7 @@ label{
   top: 0;
   font-size: 18px;
   padding-left: 15px;
-  line-height: 50px;
+  /* line-height: 50px; */
   transition: 500ms ease;
 }
 
@@ -225,6 +226,15 @@ h2{
   background-repeat: no-repeat;
   background-size: 18%;
 }
+
+
+#main-part{
+  background: url('../img/dotsbg.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
 
 input[type="radio"]:checked + label {
   background: rgba(122, 55, 213, 0.15);
