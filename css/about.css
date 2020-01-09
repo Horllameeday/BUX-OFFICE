@@ -11,6 +11,8 @@ body {
 #header {
   width: 100%;
   margin-bottom: 40px;
+  background: url('../img/right.png') no-repeat bottom right;
+  background-size: 150px;
 }
 
 #header nav{
@@ -94,7 +96,7 @@ body {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: gray;
+  background-color: rgba(122, 55, 213, 0.2);
   color: red;
 }
 #header img.nav {
