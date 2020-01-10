@@ -29,7 +29,7 @@ if(isset($_POST['apply'])) {
 
       if($statement->rowCount() == 1) {  
         $message='<div class="alert alert-success">successfully added</div>';
-        header('location: index.html');
+        #header('location: index.html');
         }
         else {
             $message='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later or existing data (email, username)</div>';
